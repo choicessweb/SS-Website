@@ -29,6 +29,17 @@ h1 {
   line-height: calc(var(--line-height) / 1.25);
 }
 
+
+.header-logo{
+  width: 150px;
+  height: 80px;
+  position: sticky;
+  z-index: 3;
+  top: calc(var(--space) * 1.5);
+  left: calc(var(--space) * 2);
+}
+
+
 .main-navigation-toggle {
   position: fixed;
   height: 1px;
