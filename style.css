@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 :root {
   --color-primary: #002626;
   --color-secondary: #F0F7EE;
@@ -7,7 +7,7 @@
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
   --space: 1rem;
   --font-primary: "Helvetica", sans-serif;
-  --font-heading: "Merriweather", serif;
+  --font-heading: 'Josefin Sans', sans-serif;
   --font-size: 1.125rem;
   --line-height: 1.5;
 }
@@ -27,6 +27,7 @@ h1 {
   font-family: var(--font-heading);
   font-size: calc(var(--font-size) + 6vmin);
   line-height: calc(var(--line-height) / 1.25);
+  text-align: center;
 }
 
 
