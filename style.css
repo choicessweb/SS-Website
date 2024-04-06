@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 body {
   background-color: #ffffff;
   color: black;
@@ -10,7 +11,7 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 :root {
-  --color-primary:#075c77;
+  --color-primary:#40626c;
   --color-secondary: #F0F7EE;
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
@@ -42,7 +43,7 @@ h1 {
 
 
 .header-logo{
-  width: 200px;
+  width:15%;
   height:auto;
   position: sticky;
   z-index: 3;
@@ -245,6 +246,7 @@ footer {
   grid-template-columns:20% 20% 20% 20% 20%;
   align-items: center;
   row-gap:7px;
+  column-gap:7px;
 
 }
 h2 {
@@ -255,20 +257,22 @@ h2 {
   text-decoration:bold;
 }
 .vp-card {
-  border: 1px solid #ccc;
+  border: 1px solid #7a7a7a;
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 10px;
   width: 640px;
-  height:250px;
-  background-color:whitesmoke;
+  height:230px;
+  background-color:rgb(44, 44, 44);
   margin:auto ;
+  top: calc(var(--space) * 1.5);
+  left: calc(var(--space) * 2);
 }
 
 .faculty-image {
   border: 1px solid #000000;
-  border-radius: 25%;
+  border-radius: 50%;
   height: 200px;
   width: 200px;
   object-fit: cover;
@@ -284,27 +288,29 @@ h2 {
   font-size: 1.6em;
   font-weight: bold;
   margin-bottom: 5px;
-  color:black;
-  --font-primary: 'Josefin Sans', sans-serif;
+  color:rgb(255, 255, 255);
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .faculty-position {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #585555;
+  color: #ffffff;
   --font-primary: "Bebas Neue", sans-serif;
   font-weight: 700;
 }
 
 .faculty-school {
   font-size: 1em;
-  color: #666;
+  color: #ffffff;
 }
 button{
-  background-color: white;
-  color: #007bff;
+  background-color: rgb(47, 87, 145);
+  color: white;
   border: 1px solid #007bff;
   border-radius: 5px; 
   padding: 10px 10px;
+  width:250px;
+  height:50px;
 }
