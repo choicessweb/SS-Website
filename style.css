@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body {
-  background-color: #d4ddf5;
+  background-color: #ffffff;
   color: black;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -34,14 +35,14 @@ body {
 h1 {
   margin-bottom: calc(var(--space) * 3);
   font-family: var(--font-heading);
-  font-size: calc(var(--font-size) + 6vmin);
+  font-size: calc(var(--font-size)+ 6vmin);
   line-height: calc(var(--line-height) / 1.25);
   text-align: center;
 }
 
 
 .header-logo{
-  width: 150px;
+  width: 200px;
   height:auto;
   position: sticky;
   z-index: 3;
@@ -114,7 +115,7 @@ h1 {
   z-index: -1;
 }
 .main-navigation ul {
-  font-size: 12vmin;
+  font-size: 8vmin;
   font-family: var(--font-heading);
   width: 100%;
 }
@@ -284,6 +285,7 @@ h2 {
   font-weight: bold;
   margin-bottom: 5px;
   color:black;
+  --font-primary: 'Josefin Sans', sans-serif;
 }
 
 .faculty-position {
@@ -291,6 +293,8 @@ h2 {
   font-weight: bold;
   margin-bottom: 5px;
   color: #585555;
+  --font-primary: "Bebas Neue", sans-serif;
+  font-weight: 700;
 }
 
 .faculty-school {

@@ -4,38 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 <title>Student Council</title>
 <head>
-    <header class="header">
-      <a href="https://www.choiceschool.com"><img src="Uploads/logo.png" alt="Logo" class="logo"></a>
-      <h1>THE SENIOR SCHOOL</h1>
-      <div class="menu-icon">&#9776;</div>
-      <!-- Add navigation links here -->
-      <nav>
-        <ul id="nav-list">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="about.html">About</a></li>
-          <li><a class="nav-link" href="faculty.html">Faculty</a></li>
-          <li><a class="nav-link" href="pulse.html">Newsletters</a></li>
-          <li><a class="nav-link" href="circulars.html">Circulars</a></li>
-          <li><a class="nav-link" href="council.html">Student Council</a></li>
-        </ul>
-      </nav>
-    
+  <header>
+    <img class="header-logo" src="assets/logo.png"></img>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+    <label for="page-nav-toggle">
+      <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+        <g class="icon-group">
+          <g class="icon--menu">
+            <path d="M 6 0 L 54 0" />
+            <path d="M 6 15 L 54 15" />
+            <path d="M 6 30 L 54 30" />
+          </g>
+          <g class="icon--close">
+            <path d="M 15 0 L 45 30" />
+            <path d="M 15 30 L 45 0" />
+          </g>
+        </g>
+      </svg>
+    </label>
+  
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-school"></i> About</a></li>
+        <li><a href="faculty.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty</a></li>
+        <li><a href="pulse.html"><i class="fa-solid fa-newspaper"></i> Newsletters</a></li>
+        <li><a href="circulars.html"><i class="fa-solid fa-file"></i> Circulars</a></li>
+        <li><a href="council.html"><i class="fa-solid fa-people-group"></i> Student Council</a></li>
+      </ul>
+    </nav>
     </header>
-    </head>
+</head>
 
 <body>
 <h2>Senior School Student Council</h2>
 <div class="vp-card" align-items:"center">
-    <img src="Uploads/SS COUNCIL/YOUSUF.jpg" alt="Faculty Image" class="faculty-image">
+    <img src="assets/SS COUNCIL/YOUSUF.jpg" alt="Faculty Image" class="faculty-image">
     <div class="faculty-info">
       <p class="faculty-name">Mohamed Yousuf Ajmal</p>
       <p class="faculty-position">HEAD BOY</p>
     </div>
   </div><br>
   <div class="vp-card" align-items:"center">
-    <img src="Uploads/YOUSUF.jpg" alt="Faculty Image" class="faculty-image">
+    <img src="assets/YOUSUF.jpg" alt="Faculty Image" class="faculty-image">
     <div class="faculty-info">
       <p class="faculty-name">Zoha Rashid</p>
       <p class="faculty-position">HEAD GIRL</p>
