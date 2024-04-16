@@ -236,12 +236,12 @@ h1 {
 
 
 
-footer {
+.footer {
   text-align:center;   
   padding: 20px;
-  background-color: mintcream;
+  background-color: rgb(70, 82, 96);
   justify-content: space-between;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .container {
@@ -355,7 +355,7 @@ h3 {
 }
 .image-container {
   position: relative;
-  width: 40%;
+  width:40%;
   height:auto;
 }
 .image1 {
@@ -365,13 +365,15 @@ h3 {
   border-radius: 2%;
 
 }
-.image2 {
+.copyright{
+  font-size: 20px;
+  font-family:"Syne",sans-serif;
+}
+
+.logo{
+  width:15%;
+  height:auto;
   position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  height: auto;
-  align-items: left;
+  z-index: 3;
+  left: calc(var(--space) * 0);
 }
