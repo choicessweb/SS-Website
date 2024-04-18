@@ -244,7 +244,7 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-.container {
+.pulsecover {
   display: grid;
   grid-template-columns:20% 20% 20% 20% 20%;
   align-items: center;
