@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Protected Page</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+
+<header>
+
+	<img class="header-logo" src="assets/logo.png"></img>
+	 <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+	 <label for="page-nav-toggle">
+	   <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+		 <g class="icon-group">
+		   <g class="icon--menu">
+			 <path d="M 6 0 L 54 0" />
+			 <path d="M 6 15 L 54 15" />
+			 <path d="M 6 30 L 54 30" />
+		   </g>
+		   <g class="icon--close">
+			 <path d="M 15 0 L 45 30" />
+			 <path d="M 15 30 L 45 0" />
+		   </g>
+		 </g>
+	   </svg>
+	 </label>
+   
+	 <nav class="main-navigation">
+	   <ul>
+		 <h3>The Senior School</h3>
+		 <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+		 <li><a href="faculty.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty</a></li>
+		 <li><a href="pulse.html"><i class="fa-solid fa-newspaper"></i> Newsletters</a></li>
+		 <li><a href="circulars.html"><i class="fa-solid fa-file"></i> Circulars</a></li>
+		 <li><a href="council.html"><i class="fa-solid fa-people-group"></i> Student Council</a></li>
+		 <li><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+		 <li><a href="audit.html"><i class="fa-solid fa-folder"></i></i> Internal Audit Files</a></li>
+   
+	   </ul>
+	 </nav>
+	 </header>
+
+
+<body>
+	<div class="password-container">
+		<h4>Password Protected Page</h4>
+		<input type="password" id="passwordInput" class="password-input" placeholder="Enter password" required />
+		<button class="submit-btn" onclick="checkPassword()">Enter</button>
+	</div>
+	
+	<div class="protected-content">
+		<!-- Your protected content goes here -->
+		<h2>Internal Audit Files</h2>
+		<h4>FACULTY DETAILS</h4>
+		<ul style="list-style: none; display: grid; align-items: center; justify-content:center;grid-template-columns:50% 50%;">
+			<li>FACULTY LIST 2023-24</li>
+			<li>
+			  <a target="_blank" href="https://docs.google.com/spreadsheets/d/1fnlJM3tDTC55Cn2sGV-CN4CEMlTYXjeH/edit?usp=drive_link&ouid=115603059028945443303&rtpof=true&sd=true">
+				<button> Click here to view</button>
+			  </a>
+			</li>
+		  </ul><br>
+		  <ul style="list-style: none; display: grid; align-items: center; justify-content:center;grid-template-columns:50% 50%;">
+			<li>FACULTY DATA 2023-24</li>
+			<li>
+			  <a target="_blank" href="https://docs.google.com/spreadsheets/d/1megWmvZztOPc4g8jWIQCpXoYzC4Tvc5x/edit?usp=drive_link&ouid=115603059028945443303&rtpof=true&sd=true">
+				<button> Click here to view</button>
+			  </a>
+			</li>
+			
+		  </ul><br>
+		  <ul style="list-style: none; display: grid; align-items: center; justify-content:center;grid-template-columns:50% 50%;">
+			<li>TEACHER TRAINING DATA</li>
+			<li>
+			  <a target="_blank" href="https://docs.google.com/spreadsheets/d/1yc2bQgkQsua-cL09HkmNlhJSmgtan4ON/edit?usp=drive_link&ouid=115603059028945443303&rtpof=true&sd=true">
+				<button> Click here to view</button>
+			  </a>
+			</li>
+			
+		  </ul><br>
+		  <ul style="list-style: none; display: grid; align-items: center; justify-content:center;grid-template-columns:50% 50%;">
+			<li>SELF APPRAISAL FORMS</li>
+			<li>
+			  <a target="_blank" href="https://drive.google.com/drive/folders/1LCazL5wX5ILEkCOgoc6JEg9tT4bKtRis?usp=drive_link">
+				<button> Click here to view</button>
+			  </a>
+			</li>
+			
+		  </ul><br>
+		  <h4>MISCELLANEOUS FILES</h4>
+		  <ul style="list-style: none; display: grid; align-items: center; justify-content:center;grid-template-columns:50% 50%;">
+			<li>REMEDIAL REPORTS</li>
+			<li>
+			  <a target="_blank" href="https://drive.google.com/drive/folders/1SCeMnxC-dxyI2bzQkJOzGRJP4J0nCeR3?usp=drive_link">
+				<button> Click here to view</button>
+			  </a>
+			</li></ul><br>
+		
+		  <ul style="list-style: none; display: grid; align-items: center; justify-content:center;grid-template-columns:50% 50%;">
+			<li>GREEN TEAM REPORTS</li>
+			<li>
+			  <a target="_blank" href="https://drive.google.com/drive/folders/1tTGxHXb_N0rGtrPeKdzFbk5tMhJtRy21?usp=sharing">
+				<button> Click here to view</button>
+			  </a>
+			</li>
+		  </ul><br>
+		  <ul style="list-style: none; display: grid; align-items: center; justify-content:center;grid-template-columns:50% 50%;">
+			<li>CURRICULUM</li>
+			<li>
+			  <a target="_blank" href="https://drive.google.com/drive/folders/1SCeMnxC-dxyI2bzQkJOzGRJP4J0nCeR3?usp=drive_linkhttps://drive.google.com/drive/folders/10-Ut9IkClpv5VNyC5sE7CAg_s5CfITuM?usp=drive_link">
+				<button> Click here to view</button>
+			  </a>
+			</li>
+		  </ul><br>
+		  <ul style="list-style: none; display: grid; align-items: center; justify-content:center;grid-template-columns:50% 50%;">
+			<li>AWARDS DOCUMENTS</li>
+			<li>
+			  <a target="_blank" href="https://drive.google.com/drive/folders/1A7A-npxZ5wMIoJuVPKDI75ZZl4MP_GNb?usp=drive_link">
+				<button> Click here to view</button>
+			  </a>
+			</li>
+		  </ul><br>
+
+
+		
+		  <br><br><br>
+	</div>
+	
+	<script>
+		var secretCode = "audit123";  // replace with your password
+		
+		function checkPassword() {
+			var input = document.getElementById("passwordInput").value;
+			
+			if (input === secretCode) {
+				document.querySelector(".protected-content").style.display = "block";
+				document.querySelector(".password-container").style.display = "none"; // hide the password container
+			} else {
+				alert("Wrong password");
+			}
+		}
+	</script>
+</body>
+</html>

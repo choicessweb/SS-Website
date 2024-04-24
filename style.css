@@ -14,7 +14,7 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 :root {
-  --color-primary:hsl(218, 19%, 25%);
+  --color-primary:#343d4c;
   --color-secondary: #F0F7EE;
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
@@ -250,6 +250,7 @@ h1 {
   align-items: center;
   row-gap:7px;
   column-gap:7px;
+  border-radius: 2%;
 
 }
 h2 {
@@ -313,13 +314,19 @@ h2 {
   font-family: 'Syne', sans-serif;;
 }
 button{
-  background-color: rgb(47, 87, 145);
-  color: white;
-  border: 1px solid #007bff;
-  border-radius: 5px; 
-  padding: 10px 10px;
-  width:250px;
-  height:50px;
+  position: relative;
+  cursor: pointer;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: .9em;
+  transition: transform 150ms, box-shadow 150ms;
+  box-shadow: 0 0 #999;
+  background-color: #343d4c;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 h3 {
   color:rgb(157, 0, 0);
@@ -348,7 +355,7 @@ h3 {
 
 }
 .body1 {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.2em;
   text-align: center;
   
@@ -376,4 +383,46 @@ h3 {
   position: absolute;
   z-index: 3;
   left: calc(var(--space) * 0);
+}
+
+
+.password-container {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.password-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+.submit-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #3e8e41;
+}
+.protected-content {
+  display: none;
+}
+h4 {
+  color:rgb(157, 0, 0);
+  text-align:center;
+  font-size: 20px;
+  text-decoration:none;
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  
 }
