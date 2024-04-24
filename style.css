@@ -411,6 +411,7 @@ h3 {
 }
 .submit-btn:hover {
   background-color: #3e8e41;
+  transform: scale(0.3em);
 }
 .protected-content {
   display: none;
