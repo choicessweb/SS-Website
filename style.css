@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 body {
   background-color: #ffffff;
   color: black;
@@ -427,3 +428,51 @@ h4 {
   font-style: normal;
   
 }
+
+.text {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 12vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 4%;
+  margin-bottom: -3%;
+
+}
+
+.text p {
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0px;
+  mix-blend-mode: none;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background: transparent;
+  padding: 15px;
+}
+
+.container img {
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  transition: all 100ms ease-out;
+  border-radius: 15px;
+}
+
+.container img:hover {
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  }
+
