@@ -14,6 +14,14 @@
 html{
   scroll-behavior: smooth;
 }
+.header-logo{
+  width:15%;
+  height:auto;
+  position: sticky;
+  z-index: 3;
+  top: calc(var(--space) * 1.5);
+  left: calc(var(--space) * 2);
+}
 
 body {
   margin: 0;
@@ -819,7 +827,7 @@ a:focus {
   z-index: -1;
 }
 .main-navigation ul {
-  font-size: 12vmin;
+  font-size: 10vmin;
   font-family: var(--font-heading);
   width: 100%;
 }
@@ -956,34 +964,4 @@ a:focus {
   .frame .copyright {
     text-align: left;
     margin-left: 0px;
-  }
-
-  .password-container {
-    width: 300px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .password-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-  }
-  .submit-btn {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .submit-btn:hover {
-    background-color: #3e8e41;
-  }
-  .protected-content {
-    display: none;
   }

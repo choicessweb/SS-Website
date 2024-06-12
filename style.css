@@ -120,7 +120,7 @@ h1 {
   z-index: -1;
 }
 .main-navigation ul {
-  font-size: 6vmin;
+  font-size: 10vmin;
   font-family: var(--font-heading);
   width: 100%;
 }
@@ -481,3 +481,4 @@ h4 {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     }
+
