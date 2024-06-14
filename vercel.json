@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {"source": "/", "destination": "/index.html"},
+      {"source": "/pulse", "destination": "/pulse.html"},
+      {"source": "/council", "destination": "/council.html"},
+      {"source": "/events", "destination": "/events.html"},
+      {"source": "/events/scientia", "destination": "/events.html/scientia.html"}
+    ]
+  }
