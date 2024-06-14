@@ -4,7 +4,7 @@
       {"source": "/pulse", "destination": "/pulse.html"},
       {"source": "/council", "destination": "/council.html"},
       {"source": "/events", "destination": "/events.html"},
-      {"source": "/events/scientia", "destination": "/scientia.html"}
+      {"source": "/scientia", "destination": "/scientia.html"}
  
      ]
   }
