@@ -4,8 +4,7 @@
       {"source": "/pulse", "destination": "/pulse.html"},
       {"source": "/council", "destination": "/council.html"},
       {"source": "/events", "destination": "/events.html"},
-      {"source": "/events/scientia", "destination": "/scientia.html"},
-      {"source": "/events/impulse", "destination": "https://impulse-tau.vercel.app"},
-      {"source": "/events/fringes", "destination": "https://fringes.ashwinanil.com"}
-    ]
+      {"source": "/events/scientia", "destination": "/scientia.html"}
+ 
+     ]
   }
