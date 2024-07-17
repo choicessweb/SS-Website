@@ -985,3 +985,20 @@ a:focus {
         font-style: normal;
         
       }
+
+      .edition {
+        position: relative;
+        bottom: 50px;
+        background-color:#20222b;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-family: 'Syne';
+        color: #ffffff;
+        opacity: 0;
+        transition: opacity 100ms ease-out;
+        border-radius: 7%;
+      }
+      
+      .container a:hover .edition {
+        opacity: 0.75;
+      }
