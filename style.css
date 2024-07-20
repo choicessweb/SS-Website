@@ -391,8 +391,8 @@ a:focus {
   width: 5000px;
   -webkit-animation-name: keyframes-slideshow;
           animation-name: keyframes-slideshow;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
