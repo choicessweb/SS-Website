@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Audit File Management</title>
+    <style>
+        /* Global styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            overflow: hidden; /* Prevent scrollbars on body */
+        }
+
+        main {
+            width: 100%;
+            padding:20px;
+            max-width: 1200px;
+            max-height: 90vh; /* Limit height to avoid cutting off content */
+            overflow-y: auto; /* Enable vertical scrolling */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background for readability */
+            border-radius: 10px;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            font-size: 36px;
+        }
+
+        .file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .file-box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            overflow: hidden; /* Prevent content overflow */
+        }
+
+        .file-box h3 {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 18px;
+            border-bottom: 2px solid #4c74af;
+            padding-bottom: 5px;
+        }
+
+        .file-button {
+            background-color: #4c6daf;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .file-button:hover {
+            background-color: #688bb3;
+        }
+
+        /* Custom scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 12px; /* Width of the scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #333; /* Color of the track */
+            border-radius: 10px; /* Rounded corners for the track */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #4c78af; /* Color of the scrollbar thumb */
+            border-radius: 10px; /* Rounded corners for the thumb */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4553a0; /* Color of the thumb on hover */
+        }
+
+        /* Responsive design */
+        @media (max-width: 1200px) {
+            .file-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .file-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>SENIOR SCHOOL AUDIT FILES</h1>
+        <div class="file-grid">
+            <!-- Row 1 -->
+            <div class="file-box">
+                <h3>Teacher Data</h3>
+                <button class="file-button">Teacher 1</button>
+                <button class="file-button">Teacher 2</button>
+                <button class="file-button">Teacher 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Circulars</h3>
+                <button class="file-button">Circular 1</button>
+                <button class="file-button">Circular 2</button>
+                <button class="file-button">Circular 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Meeting Minutes</h3>
+                <button class="file-button">Meeting 1</button>
+                <button class="file-button">Meeting 2</button>
+                <button class="file-button">Meeting 3</button>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="file-box">
+                <h3>Other Documents</h3>
+                <button class="file-button">Document 1</button>
+                <button class="file-button">Document 2</button>
+                <button class="file-button">Document 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Financial Reports</h3>
+                <button class="file-button">Report 1</button>
+                <button class="file-button">Report 2</button>
+                <button class="file-button">Report 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Policy Documents</h3>
+                <button class="file-button">Policy 1</button>
+                <button class="file-button">Policy 2</button>
+                <button class="file-button">Policy 3</button>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="file-box">
+                <h3>Compliance Records</h3>
+                <button class="file-button">Record 1</button>
+                <button class="file-button">Record 2</button>
+                <button class="file-button">Record 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Audit Logs</h3>
+                <button class="file-button">Log 1</button>
+                <button class="file-button">Log 2</button>
+                <button class="file-button">Log 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Legal Documents</h3>
+                <button class="file-button">Document 1</button>
+                <button class="file-button">Document 2</button>
+                <button class="file-button">Document 3</button>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="file-box">
+                <h3>Training Materials</h3>
+                <button class="file-button">Material 1</button>
+                <button class="file-button">Material 2</button>
+                <button class="file-button">Material 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Internal Memos</h3>
+                <button class="file-button">Memo 1</button>
+                <button class="file-button">Memo 2</button>
+                <button class="file-button">Memo 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Research Reports</h3>
+                <button class="file-button">Report 1</button>
+                <button class="file-button">Report 2</button>
+                <button class="file-button">Report 3</button>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="file-box">
+                <h3>Audit Checklists</h3>
+                <button class="file-button">Checklist 1</button>
+                <button class="file-button">Checklist 2</button>
+                <button class="file-button">Checklist 3</button>
+            </div>
+            <div class="file-box">
+                <h3>Miscellaneous</h3>
+                <button class="file-button">Item 1</button>
+                <button class="file-button">Item 2</button>
+                <button class="file-button">Item 3</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
