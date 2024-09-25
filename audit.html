@@ -89,23 +89,8 @@
             background-color: #688bb3;
         }
 
-        /* Custom scrollbar styling */
         ::-webkit-scrollbar {
-            width: 12px; /* Width of the scrollbar */
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #333; /* Color of the track */
-            border-radius: 10px; /* Rounded corners for the track */
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #4c78af; /* Color of the scrollbar thumb */
-            border-radius: 10px; /* Rounded corners for the thumb */
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #4553a0; /* Color of the thumb on hover */
+            display: none;
         }
 
         /* Responsive design */
@@ -148,51 +133,76 @@
             </div>
             <div class="file-box">
                 <h3>Excursion</h3>
-        
+                <a target="_blank" href="https://drive.google.com/drive/folders/1PPIofpgsEPni8UAtxHyxQlBPEz8ERoB-?usp=sharing"><button class="file-button">Click Here To View</button></a>
             </div>
             <div class="file-box">
                 <h3>List Of Teaching Staff</h3>
-    
+                <a target="_blank" href="https://drive.google.com/drive/folders/1WhQ6l9kkQEWdSKi-NIShuOIPCtUtyyCA?usp=sharing"><button class="file-button">Click Here To View</button></a>
             </div>
 
             
             <div class="file-box">
                 <h3>Training Data</h3>
-    
+                <a target="_blank" href="https://drive.google.com/drive/folders/1Lp371KK4xN1J54izEWbiv02-6726Vwr6?usp=sharing"><button class="file-button">Click Here To View</button></a>
             </div>
             <div class="file-box">
                 <h3>Feedback</h3>
-    
+                <a target="_blank" href="https://drive.google.com/drive/folders/1cS_o-PSiue53xA7KAQmrvY_CP8J_PG-n?usp=sharing"><button class="file-button">Click Here To View</button></a>
             </div>
             <div class="file-box">
                 <h3>Correspondence</h3>
-
+                <a target="_blank" href="https://drive.google.com/drive/folders/1w-Buyn5iQxl5Ea5__mT6UJlKOmE_S5wc?usp=sharing"><button class="file-button">Click Here To View</button></a>
             </div>
 
             <div class="file-box">
                 <h3>Allocation</h3>
-
+                <a target="_blank" href="https://drive.google.com/drive/folders/1hEb-mdIb2JhlZxFH14JWI_52Cot_i1od?usp=sharing"><button class="file-button">Click Here To View</button></a>
             </div>
             <div class="file-box">
                 <h3>Meetings</h3>
-        
+                <a target="_blank" href="https://drive.google.com/drive/folders/1LsGDubCwZJLkscuXKEO5xpPKlJx_I-H3?usp=sharing"><button class="file-button">Click Here To View</button></a>
             </div>
             <div class="file-box">
                 <h3>Student Data</h3>
-          
+                <a target="_blank" href="https://drive.google.com/drive/folders/13uE4wiXXux-hfhDfs1MbTkomCD9zYZAq?usp=sharing"><button class="file-button">Click Here To View</button></a>
             </div>
 
            
             <div class="file-box">
                 <h3>Events</h3>
                 <a target="_blank" href="https://choiceschoolevents.vercel.app"><button class="file-button">Click Here To View</button></a>
-               
-            </div>
-            <div class="file-box">
-                <h3>Miscellaneous</h3>
-           
+                <a target="_blank" href="https://drive.google.com/drive/folders/1u5HC0rKRGu_yA1BEVyoXlo33nyRyihmd?usp=sharing"><button class="file-button">Event Records</button></a>
             </div>
         </div>
     </main>
 </body>
+
+<script>
+    const correctHash = "8868167fc45769ca21c08ea04e7de74751f6cf2f26a99ea5a712b966405ba881";
+
+    async function hashPassword(password) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(password);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        return hashHex;
+    }
+
+    async function checkPassword() {
+        const password = prompt("Please enter the password:");
+        if (password === null) {
+            window.close();
+            return;
+        }
+        const hashedPassword = await hashPassword(password);
+        if (hashedPassword === correctHash) {
+            document.body.innerHTML = document.body.innerHTML; 
+        } else {
+            alert("Incorrect password. The page will close.");
+            window.close();
+        }
+    }
+    checkPassword();
+</script>
 </html>
