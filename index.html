@@ -65,25 +65,71 @@
 
 
 <br><br><br><br>
-
-<div class="text_header" style="margin-top: 300px;">
-  <h1 class="head">Welcome!
-  </h1>
-  <div class="column">
-  <p class="maintext">  <br><br>
-Welcome to The Choice School's senior school student-run website, where the heartbeat of our senior school community comes alive! This dynamic platform is designed by students, for students, offering a wealth of resources and insights. Dive into the latest updates on school events, explore thought-provoking articles on student life, and contribute your unique perspective. Let's foster a collaborative space where ideas flourish and connections thrive. Welcome aboard—your journey starts here!
-</p>
-<div class="header_image">
-   <div class='slideshow'>
-<img src="assets/gal/1.jpg">
-<img src="assets/gal/2.png">
-<img src="assets/gal/6.jpg">
-<img src="assets/gal/15.jpg">
-<img src="assets/gal/19.jpg">
-<img src="assets/gal/9.jpg">
- </div>
-</div>
+<div class="text">
+  <p>RECENT EVENTS</p>
   </div>
+<section class="slider-container">
+  <div class="slider-images">
+    <div class="slider-img">
+      <img src="assets\imp24\1.JPG" alt="1" />
+      <div class="details">
+        <h2>IMPULSE 2024</h2>
+        <p>ABSTRUSE</p>
+      </div>
+    </div>
+    <div class="slider-img">
+      <img src="assets\imp24\2.JPG" alt="2" />
+      <div class="details">
+        <h2>IMPULSE 2024</h2>
+        <p>ABSTRUSE</p>
+      </div>
+    </div>
+    <div class="slider-img">
+      <img src="assets/imp24/3.JPG" alt="3" />
+      <div class="details">
+        <h2>IMPULSE 2024</h2>
+        <p>ABSTRUSE</p>
+      </div>
+    </div>
+    <div class="slider-img active">
+      <img src="assets\imp24\4.JPG" alt="4" />
+      <div class="details">
+        <h2>iMPULSE 2024</h2>
+        <p>ABSTRUSE</p>
+      </div>
+    </div>
+    <div class="slider-img">
+      <img src="assets\imp24\5.JPG" alt="5" />
+      <div class="details">
+        <h2>IMPULSE 2024</h2>
+        <p>ABSTRUSE</p>
+      </div>
+    </div>
+    <div class="slider-img">
+      <img src="assets\imp24\6.JPG" alt="6" />
+      <div class="details">
+        <h2>IMPULSE 2024</h2>
+        <p>ABSTRUSE</p>
+      </div>
+    </div>
+    <div class="slider-img">
+        <img src="assets\imp24\7.JPG" alt="6" />
+        <div class="details">
+          <h2>IMPULSE 2024</h2>
+          <p>ABSTRUSE</p>
+        </div>
+    </div>
+  </div>
+</section>
+<script src="jQuery.js"></script>
+<script>
+  jQuery(document).ready(function ($) {
+    $(".slider-img").on("click", function () {
+      $(".slider-img").removeClass("active");
+      $(this).addClass("active");
+    });
+  });
+</script>
 </div><br>
 
 
