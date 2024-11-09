@@ -251,7 +251,7 @@ a:focus {
   display: block;
   align-items: center;
   justify-content: center;
-  font-weight: 100;
+  font-weight: 1000;
   font-size: 12vw;
   text-transform: uppercase;
   text-align: center;
@@ -272,8 +272,8 @@ a:focus {
 
 .text .ftitle {
   font-size: 3.5vw;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-family: 'Mulish', sans-serif;
+  font-weight:1000;
   letter-spacing: 0px;
   color: #c17749;
 }
