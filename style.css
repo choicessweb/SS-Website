@@ -419,6 +419,7 @@ a:focus {
   width: 400px;
   margin-right: 150px;
   font-size: 17px;
+  font-family: 'Poppins',sans-serif;
 
 }
 
@@ -695,6 +696,7 @@ a:focus {
   }
   .copyright{
     font-size: 12px;
+    font-family: 'Poppins',sans-serif;
   }
 }
 
