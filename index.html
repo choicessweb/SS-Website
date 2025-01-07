@@ -2,98 +2,113 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Choice School Events</title>
-	<meta name="keywords" content="choice, The choice school, Impulse,events,fringes,scientia,choice cup, choice events" />
-	<link rel="shortcut icon" href="/favicon.png">
-	<link rel="stylesheet" href="https://use.typekit.net/zhq0vyf.css">
-	<link rel="stylesheet" type="text/css" href="/style.css" />
-	<link rel="icon" href="assets/logc.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice School Events</title>
+    <meta name="keywords" content="choice, The choice school, Impulse, events, fringes, scientia, choice cup, choice events">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .accordion {
+            display: flex;
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+            z-index: -100;
+            overflow: hidden;
+            position: absolute;
+            opacity: 0.20;
+        }
+
+        .accordion img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: flex 0.3s ease-in-out;
+        }
+
+        .accordion .panel {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+       
+
+        .accordion .panel .caption {
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            color: white;
+            text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body class="demo-1">
-  <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
-<label for="page-nav-toggle">
-  <svg class="icon--menu-toggle" viewBox="0 0 60 30">
-    <g class="icon-group">
-      <g class="icon--menu">
-        <path d="M 6 0 L 54 0" />
-        <path d="M 6 15 L 54 15" />
-        <path d="M 6 30 L 54 30" />
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+  <label for="page-nav-toggle">
+    <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+      <g class="icon-group">
+        <g class="icon--menu">
+          <path d="M 6 0 L 54 0" />
+          <path d="M 6 15 L 54 15" />
+          <path d="M 6 30 L 54 30" />
+        </g>
+        <g class="icon--close">
+          <path d="M 15 0 L 45 30" />
+          <path d="M 15 30 L 45 0" />
+        </g>
       </g>
-      <g class="icon--close">
-        <path d="M 15 0 L 45 30" />
-        <path d="M 15 30 L 45 0" />
-      </g>
-    </g>
-  </svg>
-</label>
-
-<nav class="main-navigation">
-  <ul>
-            <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="/pulse"><i class="fa-solid fa-newspaper"></i> Newsletters</a></li>
-            <li><a href="/council"><i class="fa-solid fa-people-group"></i> Student Council</a></li>
-            <li><a href="/events"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
-            <li><a href="/media"><i class="fa-solid fa-clapperboard"></i> Media</a></li>
-  </ul>
-</nav>
-  <video autoplay loop muted class="wrapper__video">
-      <source src="assets/header_video.mp4">
-   </video> 
-	<main>
-    <div class="topnav">
-		<div id="navbar" class="frame">
-            <img class="header-logo" src="assets/log1.png"></img>
-	
-
-
+    </svg>
+  </label>
+  
+  <nav class="main-navigation">
+    <ul>
+              <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li><a href="/pulse"><i class="fa-solid fa-newspaper"></i> Newsletters</a></li>
+              <li><a href="/council"><i class="fa-solid fa-people-group"></i> Student Council</a></li>
+              <li><a href="/events"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+              <li><a href="/media"><i class="fa-solid fa-clapperboard"></i> Media</a></li>
+    </ul>
+  </nav>
+  <div class="accordion">
+    <div class="panel">
+        <img src="assets/home/image2.jpg" alt="Event Image 2">
     </div>
-
-    <div class="text">
-      <p>SENIOR SCHOOL</p>
-  <span>EVENTS</span>
-  <p class="ftitle">The Choice School</p>
+    <div class="panel">
+        <img src="assets/home/image3.jpg" alt="Event Image 3">
+    </div>
+    <div class="panel">
+        <img src="assets/home/image4.jpg" alt="Event Image 4">
+    </div>
+    <div class="panel">
+        <img src="assets/home/image5.jpg" alt="Event Image 5">
+    </div>
 </div>
-</div>
-</main>
+      <main>
+        <div class="topnav">
+            <div id="navbar" class="frame">
+                <img class="header-logo" src="assets/log1.png"></img>
+        </div>
+            
 
+            <div class="text">
+                <p>SENIOR SCHOOL</p>
+            <span>EVENTS</span>
+            <p class="ftitle">The Choice School</p>
+        </div>
+  </main>
+<br><br>
 
-
-
-
-<br><br><br><br>
-<div class="text_header" style="margin-top: 300px;">
-  <div class="column">
-  <p class="maintext">  <br><br>
-Welcome to The Choice School's senior school student-run website, where the heartbeat of our senior school community comes alive! This dynamic platform is designed by students, for students, offering a wealth of resources and insights. Dive into the latest updates on school events, explore thought-provoking articles on student life, and contribute your unique perspective. Let's foster a collaborative space where ideas flourish and connections thrive. Welcome aboard—your journey starts here!
-</p>
-<div class="header_image">
-   <div class='slideshow'>
-<img src="assets/gal/1.jpg">
-<img src="assets/gal/2.png">
-<img src="assets/gal/6.jpg">
-<img src="assets/gal/15.jpg">
-<img src="assets/gal/19.jpg">
-<img src="assets/gal/9.jpg">
- </div>
-</div>
-  </div>
-</div><br>
-
-
-
-
-
-
-<br>
-</main>
-
-
-<p style="text-align: center;" class="copyright">&copy; All rights reserved, The Choice School Kochi - Senior School <br> Main Website:<a style="color: aliceblue;" target="_blank" href="https://www.choiceschool.com">www.choiceschool.com</a>ㅤ|ㅤ <a target="_blank" href="https://www.instagram.com/thechoiceschool_events?igsh=MTd4aGFremxvbnF4Ng=="><i style="color: aliceblue;" class="fa-brands fa-instagram"></i></a>ㅤ<a target="_blank" href="https://www.youtube.com/@choiceseniorschool"><i style="color: aliceblue;" class="fa-brands fa-youtube"></i></a>
 </body>
 
 </html>
