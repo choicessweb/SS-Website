@@ -821,7 +821,7 @@ a:focus {
   z-index: -1;
 }
 .main-navigation ul {
-  font-size: 10vmin;
+  font-size: 8vmin;
   font-family: var(--font-heading);
   width: 100%;
 }
